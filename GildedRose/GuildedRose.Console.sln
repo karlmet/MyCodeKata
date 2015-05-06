@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuildedRose.Console", "GuildedRose.Console\GuildedRose.Console.csproj", "{A3C317AC-E632-4FB8-9BFE-44CDB345058D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuildedRose.Tests", "GuildedRose.Tests\GuildedRose.Tests.csproj", "{279BE4E0-73CA-48F9-A3EA-807CC31A5FA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C317AC-E632-4FB8-9BFE-44CDB345058D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C317AC-E632-4FB8-9BFE-44CDB345058D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C317AC-E632-4FB8-9BFE-44CDB345058D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C317AC-E632-4FB8-9BFE-44CDB345058D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279BE4E0-73CA-48F9-A3EA-807CC31A5FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279BE4E0-73CA-48F9-A3EA-807CC31A5FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279BE4E0-73CA-48F9-A3EA-807CC31A5FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279BE4E0-73CA-48F9-A3EA-807CC31A5FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
