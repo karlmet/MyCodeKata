@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using GuildedRose.Console.Item;
 
-    static class Program
+static class Program
     {
         public static void Main(string[] args)
         {
