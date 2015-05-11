@@ -1,20 +1,22 @@
 ﻿namespace GuildedRose.Console.Item
 {
-    public class LegendaryDecoration : DecorationBase 
+    public class LegendaryDecoration : ItemDecorator
     {
-        public LegendaryDecoration(Item item)
+        public ItemBase DecoratedItem;
+
+        public LegendaryDecoration(ItemBase item)
         {
-            _Item = item;
+            DecoratedItem = item;
         }
 
         protected override void UpdateSellIn()
         {
-            _Item.SellIn  = _Item.SellIn ;
+            DecoratedItem.Item.SellIn = DecoratedItem.Item.SellIn;
         }
 
         protected override void UpdateQuality()
         {
-            _Item.Quality = _Item.Quality;
+            DecoratedItem.Item.SellIn = DecoratedItem.Item.SellIn;
         }
     }
 }

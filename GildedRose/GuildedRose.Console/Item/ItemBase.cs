@@ -3,9 +3,9 @@ using GuildedRose.Console.Item;
 
 namespace GuildedRose.Console.Item
 {
-    public abstract class DecorationBase
+    public abstract class ItemBase
     {
-        public Item _Item;
+        public Item Item;
 
         public void Update()
         {
@@ -16,7 +16,7 @@ namespace GuildedRose.Console.Item
 
         protected virtual void UpdateSellIn()
         {
-            _Item.SellIn = _Item.SellIn - 1;
+            Item.SellIn = Item.SellIn - 1;
         }
 
         protected abstract void UpdateQuality();

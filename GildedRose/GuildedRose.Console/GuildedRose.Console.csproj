@@ -43,9 +43,10 @@
   <ItemGroup>
     <Compile Include="GildedRose.cs" />
     <Compile Include="Item\Item.cs" />
-    <Compile Include="Item\DecorationBase.cs" />
+    <Compile Include="Item\ItemBase.cs" />
+    <Compile Include="Item\ItemDecorator.cs" />
     <Compile Include="Item\ItemFactory.cs" />
-    <Compile Include="Item\RegularDecoration.cs" />
+    <Compile Include="Item\ItemRegular.cs" />
     <Compile Include="Item\LegendaryDecoration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

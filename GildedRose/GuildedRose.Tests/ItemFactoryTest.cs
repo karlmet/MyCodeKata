@@ -30,7 +30,7 @@ namespace GuildedRose.Tests
                 var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
 
             //--Assert
-            Assert.IsInstanceOfType(itemDecorated, typeof(RegularDecoration));
+            Assert.IsInstanceOfType(itemDecorated, typeof(ItemRegular));
         }
     }
 }

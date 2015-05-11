@@ -2,14 +2,17 @@
 {
     public static class ItemFactory
     {
-        public static DecorationBase CreateDecoratedItem(Item itemToDecorate)
+        public static ItemBase CreateDecoratedItem(Item itemToDecorate)
         {
             switch (itemToDecorate.Name)
             {
                 case "Sulfuras, Hand of Ragnaros":
-                    return new LegendaryDecoration(itemToDecorate);
+                    ItemBase item = new ItemRegular(itemToDecorate);
+                    item = new LegendaryDecoration(item);
+                    return item;
+                  
                 default:
-                    return new RegularDecoration(itemToDecorate);
+                    return new ItemRegular(itemToDecorate);
             }
 
             
