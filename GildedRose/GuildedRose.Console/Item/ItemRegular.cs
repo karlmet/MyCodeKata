@@ -9,7 +9,10 @@
 
         protected override void UpdateQuality()
         {
-            Item.Quality = Item.Quality-1;
+            if (IsSellEnded())
+                DecreaseQualityTwice();
+            else
+                DecreaseQualityNormally();    
         }
     }
 }

@@ -47,6 +47,7 @@
     <Compile Include="Item\ItemDecorator.cs" />
     <Compile Include="Item\ItemFactory.cs" />
     <Compile Include="Item\ItemRegular.cs" />
+    <Compile Include="Item\AgedBrieDecoration.cs" />
     <Compile Include="Item\LegendaryDecoration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

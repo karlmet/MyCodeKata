@@ -4,18 +4,20 @@
     {
         public static ItemBase CreateDecoratedItem(Item itemToDecorate)
         {
+            ItemBase item = new ItemRegular(itemToDecorate);
+
             switch (itemToDecorate.Name)
             {
                 case "Sulfuras, Hand of Ragnaros":
-                    ItemBase item = new ItemRegular(itemToDecorate);
                     item = new LegendaryDecoration(item);
-                    return item;
-                  
-                default:
-                    return new ItemRegular(itemToDecorate);
-            }
+                    break;
 
+                case "Aged Brie":
+                    item = new AgedBrieDecoration(item);
+                    break;
             
+            }
+            return item;
         }     
     }
 }

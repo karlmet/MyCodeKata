@@ -2,21 +2,19 @@
 {
     public class LegendaryDecoration : ItemDecorator
     {
-        public ItemBase DecoratedItem;
-
-        public LegendaryDecoration(ItemBase item)
+        public LegendaryDecoration(ItemBase itemToDecorate)
         {
-            DecoratedItem = item;
+           Item = itemToDecorate.Item;
         }
 
         protected override void UpdateSellIn()
         {
-            DecoratedItem.Item.SellIn = DecoratedItem.Item.SellIn;
+           Item.SellIn = Item.SellIn;
         }
 
         protected override void UpdateQuality()
         {
-            DecoratedItem.Item.SellIn = DecoratedItem.Item.SellIn;
+           Item.SellIn = Item.SellIn;
         }
     }
 }
