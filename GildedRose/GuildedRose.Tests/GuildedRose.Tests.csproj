@@ -53,10 +53,12 @@
     <Compile Include="AgedBrieTest.cs" />
     <Compile Include="BackstagePassTest.cs" />
     <Compile Include="ConjuredItemTest.cs" />
-    <Compile Include="RegularItemTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ItemFactoryTest.cs" />
     <Compile Include="LegendaryItemTest.cs" />
+    <Compile Include="RegularItemTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GuildedRose.Console\GuildedRose.Console.csproj">
