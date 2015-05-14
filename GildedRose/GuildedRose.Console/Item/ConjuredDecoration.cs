@@ -1,9 +1,9 @@
 ﻿namespace GuildedRose.Console.Item
 {
-    public class AgedBrieDecoration : ItemDecorator
+    public class ConjuredDecoration : ItemDecorator
     {
 
-        public AgedBrieDecoration(ItemBase itemToDecorate)
+        public ConjuredDecoration(ItemBase itemToDecorate)
         {
             Item = itemToDecorate.Item;
         }
@@ -13,10 +13,12 @@
         {
             if (Item.Quality < MaxValue)
             {
-                if (IsSellInEnded() )
-                    UpgradeQualityTwice();
+                if (IsSellInEnded())
+                    DecreaseQualityQuadrice();
                 else
-                    UpgradeQualityNormally(); 
+                    DecreaseQualityTwice();
+                
+
             }
         }
     }

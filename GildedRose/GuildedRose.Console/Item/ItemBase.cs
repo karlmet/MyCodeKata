@@ -6,7 +6,7 @@ namespace GuildedRose.Console.Item
     public abstract class ItemBase
     {
         public Item Item;
-        protected  const int MaxValue = 50;
+        protected const int MaxValue = 50;
         protected const int MinValue = 0;
 
         public void Update()
@@ -15,12 +15,12 @@ namespace GuildedRose.Console.Item
             UpdateSellIn();
         }
 
-        protected bool IsSellEnded()
+        protected bool IsSellInEnded()
         {
             return Item.SellIn <= 0;
         }
 
-        private bool IsActualQualityValid()
+        protected bool IsActualQualityValid()
         {
             return Item.Quality <= 50 && Item.Quality >= 0;
         }
@@ -42,11 +42,18 @@ namespace GuildedRose.Console.Item
             Item.Quality = Item.Quality + 2;
         }
 
+        protected void UpgradeQualityThrice()
+        {
+            Item.Quality = Item.Quality + 3;
+        }
+
         protected void UpgradeQualityNormally()
         {
             Item.Quality = Item.Quality + 1;
         }
 
+        //Todo Doit revoir ou ajouter des validations au niveau de la qualité dans les tests
+        // Pas sur qu'on couvre tout
         protected void DecreaseQualityNormally()
         {
             if (IsActualQualityValid() && IsQualityValid(Item.Quality - 1))
@@ -57,6 +64,12 @@ namespace GuildedRose.Console.Item
         {
             if (IsActualQualityValid() && IsQualityValid(Item.Quality - 2))
                 Item.Quality = Item.Quality - 2;
+        }
+
+        protected void DecreaseQualityQuadrice()
+        {
+            if (IsActualQualityValid() && IsQualityValid(Item.Quality - 4))
+                Item.Quality = Item.Quality - 4;
         }
     }
 }

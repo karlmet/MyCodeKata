@@ -9,7 +9,7 @@
 
         protected override void UpdateQuality()
         {
-            if (IsSellEnded())
+            if (IsSellInEnded())
                 DecreaseQualityTwice();
             else
                 DecreaseQualityNormally();    
