@@ -3,11 +3,12 @@
     public class AgedBrieDecoration : ItemDecorator
     {
 
-        public AgedBrieDecoration(ItemBase itemToDecorate)
-        {
-            Item = itemToDecorate.Item;
-        }
+        public AgedBrieDecoration(ItemBase itemToDecorate) : base(itemToDecorate) { }
 
+        //public AgedBrieDecoration( )
+        //{
+
+        //}
 
         protected override void UpdateQuality()
         {

@@ -2,10 +2,7 @@
 {
     public class LegendaryDecoration : ItemDecorator
     {
-        public LegendaryDecoration(ItemBase itemToDecorate)
-        {
-           Item = itemToDecorate.Item;
-        }
+        public LegendaryDecoration(ItemBase itemToDecorate) : base(itemToDecorate) { }
 
         protected override void UpdateSellIn()
         {

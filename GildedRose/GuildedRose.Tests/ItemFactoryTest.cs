@@ -32,5 +32,20 @@ namespace GuildedRose.Tests
             //--Assert
             Assert.IsInstanceOfType(itemDecorated, typeof(ItemRegular));
         }
+
+        //[TestMethod]
+        //public void CreateDecoratedItem_AgedBrie_TypeIsRegular()
+        //{
+        //    //--Arrange
+        //    var newItem = new Item { Name = "Aged Brie", SellIn = 10, Quality = 20 };
+
+        //    //--Act
+        //    //var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
+        //    var factory = new ItemFactory(newItem);
+        //    var itemDecorated = factory.CreateInstance(newItem.Name );
+
+        //    //--Assert
+        //    Assert.IsInstanceOfType(itemDecorated, typeof(AgedBrieDecoration));
+        //}
     }
 }

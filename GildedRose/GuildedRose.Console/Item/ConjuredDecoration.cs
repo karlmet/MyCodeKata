@@ -3,10 +3,7 @@
     public class ConjuredDecoration : ItemDecorator
     {
 
-        public ConjuredDecoration(ItemBase itemToDecorate)
-        {
-            Item = itemToDecorate.Item;
-        }
+        public ConjuredDecoration(ItemBase itemToDecorate) : base(itemToDecorate) { }
 
 
         protected override void UpdateQuality()

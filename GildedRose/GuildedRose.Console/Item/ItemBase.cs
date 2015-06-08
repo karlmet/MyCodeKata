@@ -3,7 +3,7 @@ using GuildedRose.Console.Item;
 
 namespace GuildedRose.Console.Item
 {
-    public abstract class ItemBase
+    public abstract class ItemBase : IItemBase
     {
         public Item Item;
         protected const int MaxValue = 50;

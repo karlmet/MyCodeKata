@@ -2,11 +2,8 @@
 {
     public class BackstageDecoration : ItemDecorator
     {
-
-        public BackstageDecoration(ItemBase itemToDecorate)
-        {
-            Item = itemToDecorate.Item;
-        }
+     
+        public BackstageDecoration(ItemBase itemToDecorate) : base(itemToDecorate){ }
 
 
         protected override void UpdateQuality()
