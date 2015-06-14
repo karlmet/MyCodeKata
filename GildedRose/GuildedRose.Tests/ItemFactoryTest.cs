@@ -33,19 +33,45 @@ namespace GuildedRose.Tests
             Assert.IsInstanceOfType(itemDecorated, typeof(ItemRegular));
         }
 
-        //[TestMethod]
-        //public void CreateDecoratedItem_AgedBrie_TypeIsRegular()
-        //{
-        //    //--Arrange
-        //    var newItem = new Item { Name = "Aged Brie", SellIn = 10, Quality = 20 };
+        [TestMethod]
+        public void CreateDecoratedItem_AgedBrie_TypeIsRegular()
+        {
+            //--Arrange
+            var newItem = new Item { Name = "Aged Brie", SellIn = 10, Quality = 20 };
 
-        //    //--Act
-        //    //var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
-        //    var factory = new ItemFactory(newItem);
-        //    var itemDecorated = factory.CreateInstance(newItem.Name );
+            //--Act
+            var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
 
-        //    //--Assert
-        //    Assert.IsInstanceOfType(itemDecorated, typeof(AgedBrieDecoration));
-        //}
+            //--Assert
+            Assert.IsInstanceOfType(itemDecorated, typeof(AgedBrieDecoration));
+        }
+
+        [TestMethod]
+        public void CreateDecoratedItem_BackstagePass_TypeIsBackstagePass()
+        {
+            //--Arrange
+            var newItem = new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 20 };
+
+            //--Act
+            var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
+
+            //--Assert
+            Assert.IsInstanceOfType(itemDecorated, typeof(BackstageDecoration));
+        }
+
+        [TestMethod]
+        public void CreateDecoratedItem_RareSowrd_TypeIsRare()
+        {
+            //--Arrange
+            var newItem = new Item { Name = "Rare Damarian Steel Sword", SellIn = 10, Quality = 20 };
+
+            //--Act
+            var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
+
+            //--Assert
+            Assert.IsInstanceOfType(itemDecorated, typeof(RareDecoration));
+        }
+
+      
     }
 }

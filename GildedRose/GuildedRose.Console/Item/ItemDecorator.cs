@@ -8,16 +8,10 @@ namespace GuildedRose.Console.Item
 {
   public abstract class ItemDecorator : ItemBase
     {
-      public ItemDecorator(ItemBase itemToDecorate)
+      protected ItemDecorator(ItemBase itemToDecorate)
       {
            Item = itemToDecorate.Item;
         }
-
-
-        //public ItemDecorator( )
-        //{
-        // //
-        //}
 
     }
 }

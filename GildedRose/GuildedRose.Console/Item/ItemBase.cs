@@ -52,6 +52,16 @@ namespace GuildedRose.Console.Item
             Item.Quality = Item.Quality + 1;
         }
 
+        protected bool IsSellNumberIsOdd()
+        {
+            return Item.SellIn % 2 != 0;
+        }
+
+        protected bool IsSellNumberIsEven()
+        {
+            return Item.SellIn % 2== 0;
+        }
+
         //Todo Doit revoir ou ajouter des validations au niveau de la qualité dans les tests
         // Pas sur qu'on couvre tout
         protected void DecreaseQualityNormally()

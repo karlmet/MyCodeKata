@@ -42,16 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GildedRose.cs" />
-    <Compile Include="Item\BackstageDecoration.cs" />
-    <Compile Include="Item\ConjuredDecoration.cs" />
+    <Compile Include="Item\Decoration\BackstageDecoration.cs" />
+    <Compile Include="Item\Decoration\RareDecoration.cs" />
+    <Compile Include="Item\Decoration\ConjuredDecoration.cs" />
     <Compile Include="Item\IItemBase.cs" />
     <Compile Include="Item\Item.cs" />
     <Compile Include="Item\ItemBase.cs" />
     <Compile Include="Item\ItemDecorator.cs" />
     <Compile Include="Item\ItemFactory.cs" />
     <Compile Include="Item\ItemRegular.cs" />
-    <Compile Include="Item\AgedBrieDecoration.cs" />
-    <Compile Include="Item\LegendaryDecoration.cs" />
+    <Compile Include="Item\Decoration\AgedBrieDecoration.cs" />
+    <Compile Include="Item\Decoration\LegendaryDecoration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
