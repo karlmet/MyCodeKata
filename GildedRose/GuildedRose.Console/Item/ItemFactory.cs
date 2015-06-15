@@ -21,6 +21,9 @@
             else if (itemToDecorate.Name.Contains("Rare"))
                 item = new RareDecoration(item);
 
+            else if (itemToDecorate.Name.Contains("Suspicious"))
+                item = new SuspiciousDecoration(item);
+
             return item;
         }
     }

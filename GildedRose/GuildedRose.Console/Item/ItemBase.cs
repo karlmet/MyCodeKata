@@ -3,7 +3,7 @@ using GuildedRose.Console.Item;
 
 namespace GuildedRose.Console.Item
 {
-    public abstract class ItemBase : IItemBase
+    public abstract class ItemBase 
     {
         public Item Item;
         protected const int MaxValue = 50;
@@ -52,12 +52,12 @@ namespace GuildedRose.Console.Item
             Item.Quality = Item.Quality + 1;
         }
 
-        protected bool IsSellNumberIsOdd()
+        protected bool IsSellInNumberIsOdd()
         {
             return Item.SellIn % 2 != 0;
         }
 
-        protected bool IsSellNumberIsEven()
+        protected bool IsSellInNumberIsEven()
         {
             return Item.SellIn % 2== 0;
         }

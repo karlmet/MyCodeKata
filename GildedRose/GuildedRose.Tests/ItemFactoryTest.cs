@@ -60,7 +60,7 @@ namespace GuildedRose.Tests
         }
 
         [TestMethod]
-        public void CreateDecoratedItem_RareSowrd_TypeIsRare()
+        public void CreateDecoratedItem_RareSword_TypeIsRare()
         {
             //--Arrange
             var newItem = new Item { Name = "Rare Damarian Steel Sword", SellIn = 10, Quality = 20 };
@@ -70,6 +70,19 @@ namespace GuildedRose.Tests
 
             //--Assert
             Assert.IsInstanceOfType(itemDecorated, typeof(RareDecoration));
+        }
+
+        [TestMethod]
+        public void CreateDecoratedItem_SuspShield_TypeIsSuspicious()
+        {
+            //--Arrange
+            var newItem = new Item { Name = "Suspicious Wooded Shield", SellIn = 10, Quality = 20 };
+
+            //--Act
+            var itemDecorated = ItemFactory.CreateDecoratedItem(newItem);
+
+            //--Assert
+            Assert.IsInstanceOfType(itemDecorated, typeof(SuspiciousDecoration));
         }
 
       

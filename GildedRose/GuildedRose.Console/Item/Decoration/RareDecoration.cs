@@ -10,7 +10,7 @@
         {
             if (Item.Quality < MaxValue)
             {
-                if (IsSellNumberIsEven())
+                if (IsSellInNumberIsEven())
                 {
                     if (IsSellInEnded())
                         DecreaseQualityTwice();

@@ -43,9 +43,9 @@
   <ItemGroup>
     <Compile Include="GildedRose.cs" />
     <Compile Include="Item\Decoration\BackstageDecoration.cs" />
+    <Compile Include="Item\Decoration\SuspiciousDecoration.cs" />
     <Compile Include="Item\Decoration\RareDecoration.cs" />
     <Compile Include="Item\Decoration\ConjuredDecoration.cs" />
-    <Compile Include="Item\IItemBase.cs" />
     <Compile Include="Item\Item.cs" />
     <Compile Include="Item\ItemBase.cs" />
     <Compile Include="Item\ItemDecorator.cs" />
